@@ -8,7 +8,10 @@ extern "C" {
     JavaObject::Init(target);
   }
 
-  NAN_MODULE_WORKER_ENABLED(nodejavabridge_bindings, init);
+  //NODE_MODULE(nodejavabridge_bindings, init);
+  NODE_MODULE_INIT() {
+    init(nodejavabridge_bindings);
+}
 }
 
 #ifdef WIN32
