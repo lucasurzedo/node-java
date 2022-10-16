@@ -10,7 +10,7 @@ extern "C" {
 
   //NODE_MODULE(nodejavabridge_bindings, init);
   NODE_MODULE_INIT() {
-    Node::Init(nodejavabridge_bindings);
+    init(nodejavabridge_bindings);
 }
 }
 
