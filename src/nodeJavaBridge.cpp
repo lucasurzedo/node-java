@@ -8,10 +8,7 @@ extern "C" {
     JavaObject::Init(target);
   }
 
-  //NODE_MODULE(nodejavabridge_bindings, init);
-  NODE_MODULE_INIT() {
-    init(nodejavabridge_bindings);
-}
+  NODE_MODULE_INIT(nodejavabridge_bindings, init);
 }
 
 #ifdef WIN32
