@@ -1,4 +1,3 @@
-
 #include "java.h"
 #include "javaObject.h"
 
@@ -15,7 +14,6 @@ extern "C" {
   #else
     NODE_MODULE(nodejavabridge_bindings, init);
   #endif
-}
 }
 
 #ifdef WIN32
